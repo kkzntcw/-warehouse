@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "4O9ZWDrRVoWnjURZJzHj8LxtRjCRKNuw5JIdxkITDkLpcqaNLEFG/ZZTe23GjZMclP+TIKUUGK2DqDziSaZYiA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kkznt\\source\\repos\\pharmacy_storage\\pharmacy_storage\\pharmacy_storage.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kkznt\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\kkznt\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\kkznt\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
