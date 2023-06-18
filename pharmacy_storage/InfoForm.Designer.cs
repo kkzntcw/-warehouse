@@ -36,24 +36,27 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(327, 103);
+            label1.Location = new Point(12, 134);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(720, 20);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "Данное приложение представляет собой базу данных для управления Аптечным складом \"Еклиник\" ";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(327, 148);
+            label2.Location = new Point(12, 401);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(380, 40);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "Приложение разработал студент группы БО231ПИН \r\nКузнецов А.Ю.\r\n";
+            label2.Click += label2_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(337, 290);
+            button1.Location = new Point(431, 409);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 2;
@@ -65,7 +68,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(555, 450);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
