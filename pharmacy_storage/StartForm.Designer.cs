@@ -72,7 +72,7 @@
             Controls.Add(infoBtn);
             Controls.Add(startBtn);
             Name = "StartForm";
-            Text = "Аптечный склад \"Еклиник\"";
+            Text = "ЕКЛИНИК-РАЗВИТИЕ";
             Load += StartForm_Load;
             ResumeLayout(false);
         }

@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            button2 = new Button();
             label11 = new Label();
             label10 = new Label();
             label9 = new Label();
@@ -80,16 +79,6 @@
             tabPage3 = new TabPage();
             dgvData3 = new DataGridView();
             tabPage4 = new TabPage();
-            label27 = new Label();
-            textBox1 = new TextBox();
-            label26 = new Label();
-            label25 = new Label();
-            label24 = new Label();
-            label23 = new Label();
-            textBoxName = new TextBox();
-            textBoxJobposition = new TextBox();
-            textBoxLastname = new TextBox();
-            textBoxSurname = new TextBox();
             button19 = new Button();
             button18 = new Button();
             button17 = new Button();
@@ -177,12 +166,11 @@
             tabControl1.Margin = new Padding(3, 4, 3, 4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(958, 568);
+            tabControl1.Size = new Size(1001, 568);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(button2);
             tabPage1.Controls.Add(label11);
             tabPage1.Controls.Add(label10);
             tabPage1.Controls.Add(label9);
@@ -205,20 +193,10 @@
             tabPage1.Margin = new Padding(3, 4, 3, 4);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3, 4, 3, 4);
-            tabPage1.Size = new Size(950, 535);
+            tabPage1.Size = new Size(993, 535);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Клиенты ";
             tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(645, 431);
-            button2.Name = "button2";
-            button2.Size = new Size(134, 29);
-            button2.TabIndex = 21;
-            button2.Text = "Go to Form2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click_1;
             // 
             // label11
             // 
@@ -419,9 +397,9 @@
             tabPage2.Margin = new Padding(3, 4, 3, 4);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3, 4, 3, 4);
-            tabPage2.Size = new Size(950, 535);
+            tabPage2.Size = new Size(993, 535);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "Товары";
+            tabPage2.Text = "Поставки";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // textBoxInvoiceId
@@ -651,7 +629,7 @@
             tabPage3.Location = new Point(4, 29);
             tabPage3.Margin = new Padding(3, 4, 3, 4);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(950, 535);
+            tabPage3.Size = new Size(993, 535);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Поставщики";
             tabPage3.UseVisualStyleBackColor = true;
@@ -669,16 +647,6 @@
             // 
             // tabPage4
             // 
-            tabPage4.Controls.Add(label27);
-            tabPage4.Controls.Add(textBox1);
-            tabPage4.Controls.Add(label26);
-            tabPage4.Controls.Add(label25);
-            tabPage4.Controls.Add(label24);
-            tabPage4.Controls.Add(label23);
-            tabPage4.Controls.Add(textBoxName);
-            tabPage4.Controls.Add(textBoxJobposition);
-            tabPage4.Controls.Add(textBoxLastname);
-            tabPage4.Controls.Add(textBoxSurname);
             tabPage4.Controls.Add(button19);
             tabPage4.Controls.Add(button18);
             tabPage4.Controls.Add(button17);
@@ -694,94 +662,14 @@
             tabPage4.Location = new Point(4, 29);
             tabPage4.Margin = new Padding(3, 4, 3, 4);
             tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(950, 535);
+            tabPage4.Size = new Size(993, 535);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Работники склада";
             tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Location = new Point(367, 359);
-            label27.Name = "label27";
-            label27.Size = new Size(102, 20);
-            label27.TabIndex = 22;
-            label27.Text = "ID работника";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(485, 356);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(290, 27);
-            textBox1.TabIndex = 21;
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Location = new Point(367, 491);
-            label26.Name = "label26";
-            label26.Size = new Size(90, 20);
-            label26.TabIndex = 20;
-            label26.Text = "Должность ";
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Location = new Point(367, 458);
-            label25.Name = "label25";
-            label25.Size = new Size(76, 20);
-            label25.TabIndex = 19;
-            label25.Text = "Отчество ";
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Location = new Point(367, 425);
-            label24.Name = "label24";
-            label24.Size = new Size(73, 20);
-            label24.TabIndex = 18;
-            label24.Text = "Фамилия";
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Location = new Point(370, 396);
-            label23.Name = "label23";
-            label23.Size = new Size(39, 20);
-            label23.TabIndex = 17;
-            label23.Text = "Имя";
-            // 
-            // textBoxName
-            // 
-            textBoxName.Location = new Point(485, 389);
-            textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(290, 27);
-            textBoxName.TabIndex = 16;
-            // 
-            // textBoxJobposition
-            // 
-            textBoxJobposition.Location = new Point(485, 491);
-            textBoxJobposition.Name = "textBoxJobposition";
-            textBoxJobposition.Size = new Size(290, 27);
-            textBoxJobposition.TabIndex = 15;
-            // 
-            // textBoxLastname
-            // 
-            textBoxLastname.Location = new Point(485, 458);
-            textBoxLastname.Name = "textBoxLastname";
-            textBoxLastname.Size = new Size(290, 27);
-            textBoxLastname.TabIndex = 14;
-            // 
-            // textBoxSurname
-            // 
-            textBoxSurname.Location = new Point(485, 422);
-            textBoxSurname.Name = "textBoxSurname";
-            textBoxSurname.Size = new Size(290, 27);
-            textBoxSurname.TabIndex = 13;
-            // 
             // button19
             // 
-            button19.Location = new Point(790, 461);
+            button19.Location = new Point(797, 476);
             button19.Margin = new Padding(3, 4, 3, 4);
             button19.Name = "button19";
             button19.Size = new Size(86, 31);
@@ -791,7 +679,7 @@
             // 
             // button18
             // 
-            button18.Location = new Point(790, 422);
+            button18.Location = new Point(705, 476);
             button18.Margin = new Padding(3, 4, 3, 4);
             button18.Name = "button18";
             button18.Size = new Size(86, 31);
@@ -802,7 +690,7 @@
             // 
             // button17
             // 
-            button17.Location = new Point(790, 383);
+            button17.Location = new Point(613, 476);
             button17.Margin = new Padding(3, 4, 3, 4);
             button17.Name = "button17";
             button17.Size = new Size(86, 31);
@@ -819,9 +707,9 @@
             dgvData5.Name = "dgvData5";
             dgvData5.RowHeadersWidth = 51;
             dgvData5.RowTemplate.Height = 25;
-            dgvData5.Size = new Size(611, 299);
+            dgvData5.Size = new Size(658, 444);
             dgvData5.TabIndex = 8;
-            dgvData5.CellContentClick += dgvData5_CellContentClick;
+           
             // 
             // label4
             // 
@@ -908,7 +796,7 @@
             tabPage5.Location = new Point(4, 29);
             tabPage5.Margin = new Padding(3, 4, 3, 4);
             tabPage5.Name = "tabPage5";
-            tabPage5.Size = new Size(950, 535);
+            tabPage5.Size = new Size(993, 535);
             tabPage5.TabIndex = 4;
             tabPage5.Text = "Счёт-фактуры";
             tabPage5.UseVisualStyleBackColor = true;
@@ -916,12 +804,12 @@
             // dgvData4
             // 
             dgvData4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvData4.Location = new Point(111, 111);
+            dgvData4.Location = new Point(8, 16);
             dgvData4.Margin = new Padding(3, 4, 3, 4);
             dgvData4.Name = "dgvData4";
             dgvData4.RowHeadersWidth = 51;
             dgvData4.RowTemplate.Height = 25;
-            dgvData4.Size = new Size(706, 309);
+            dgvData4.Size = new Size(977, 515);
             dgvData4.TabIndex = 6;
             // 
             // tabPage6
@@ -930,7 +818,7 @@
             tabPage6.Location = new Point(4, 29);
             tabPage6.Name = "tabPage6";
             tabPage6.Padding = new Padding(3);
-            tabPage6.Size = new Size(950, 535);
+            tabPage6.Size = new Size(993, 535);
             tabPage6.TabIndex = 5;
             tabPage6.Text = "Список товаров";
             tabPage6.UseVisualStyleBackColor = true;
@@ -951,7 +839,7 @@
             tabPage7.Location = new Point(4, 29);
             tabPage7.Name = "tabPage7";
             tabPage7.Padding = new Padding(3);
-            tabPage7.Size = new Size(950, 535);
+            tabPage7.Size = new Size(993, 535);
             tabPage7.TabIndex = 6;
             tabPage7.Text = "SELECT";
             tabPage7.UseVisualStyleBackColor = true;
@@ -1007,7 +895,7 @@
             tabPage8.Location = new Point(4, 29);
             tabPage8.Name = "tabPage8";
             tabPage8.Padding = new Padding(3);
-            tabPage8.Size = new Size(950, 535);
+            tabPage8.Size = new Size(993, 535);
             tabPage8.TabIndex = 7;
             tabPage8.Text = "ListView";
             tabPage8.UseVisualStyleBackColor = true;
@@ -1024,7 +912,7 @@
             tableLayoutPanel2.RowCount = 2;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 90F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel2.Size = new Size(944, 529);
+            tableLayoutPanel2.Size = new Size(987, 529);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // button1
@@ -1032,7 +920,7 @@
             button1.Dock = DockStyle.Bottom;
             button1.Location = new Point(3, 497);
             button1.Name = "button1";
-            button1.Size = new Size(938, 29);
+            button1.Size = new Size(981, 29);
             button1.TabIndex = 0;
             button1.Text = "SELECT";
             button1.UseVisualStyleBackColor = true;
@@ -1074,7 +962,7 @@
             tabPage9.Location = new Point(4, 29);
             tabPage9.Name = "tabPage9";
             tabPage9.Padding = new Padding(3);
-            tabPage9.Size = new Size(950, 535);
+            tabPage9.Size = new Size(993, 535);
             tabPage9.TabIndex = 8;
             tabPage9.Text = "DT Filter";
             tabPage9.UseVisualStyleBackColor = true;
@@ -1134,7 +1022,7 @@
             tabPage10.Location = new Point(4, 29);
             tabPage10.Name = "tabPage10";
             tabPage10.Padding = new Padding(3);
-            tabPage10.Size = new Size(950, 535);
+            tabPage10.Size = new Size(993, 535);
             tabPage10.TabIndex = 9;
             tabPage10.Text = "LV Filter";
             tabPage10.UseVisualStyleBackColor = true;
@@ -1197,7 +1085,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(958, 585);
+            ClientSize = new Size(1001, 574);
             Controls.Add(tabControl1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "MainForm";
@@ -1306,16 +1194,6 @@
         private Label label12;
         private TabPage tabPage6;
         private DataGridView dgvData6;
-        private Label label26;
-        private Label label25;
-        private Label label24;
-        private Label label23;
-        private TextBox textBoxName;
-        private TextBox textBoxJobposition;
-        private TextBox textBoxLastname;
-        private TextBox textBoxSurname;
-        private Label label27;
-        private TextBox textBox1;
         private TabPage tabPage7;
         private TableLayoutPanel tableLayoutPanel1;
         private Button selectbtn;
@@ -1342,6 +1220,5 @@
         private ColumnHeader seller_id;
         private ColumnHeader producer;
         private ColumnHeader price;
-        private Button button2;
     }
 }

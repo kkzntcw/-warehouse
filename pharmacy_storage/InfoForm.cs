@@ -34,7 +34,7 @@ namespace pharmacy_storage
 
         private void label1_Click(object sender, EventArgs e)
         {
-            label1.Height = 200; 
+            label1.Height = 200;
 
         }
     }

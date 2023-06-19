@@ -399,7 +399,7 @@ namespace pharmacy_storage
             string invoice_id = textBoxInvoiceId.Text;
 
             // Формирование SQL-запроса
-            string query = "INSERT INTO goods (goods_id,seller_id, begin, end, producer, date_come, goods_invoice, price, client_id, product_name_id, invoice_id) " +
+            string query = "INSERT INTO goods (goods_id,seller_id, begin_date, end_date, producer, date_come, goods_invoice, price, client_id, product_name_id, invoice_id) " +
                            $"VALUES ('{goods_id}','{seller_id}', '{begin}', '{end}', '{producer}','{date_come}','{goods_invoice}','{price}','{client_id}','{product_name_id}','{invoice_id}');";
 
             // Выполнение SQL-запроса
@@ -423,47 +423,12 @@ namespace pharmacy_storage
             Select_goods();
         }
 
-        private void dgvData5_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                rowIndex = e.RowIndex;
-                textBox1.Text = dgvData5.Rows[e.RowIndex].Cells["worker_id"].Value.ToString();
-                textBoxName.Text = dgvData5.Rows[e.RowIndex].Cells["worker_name"].Value.ToString();
-                textBoxSurname.Text = dgvData5.Rows[e.RowIndex].Cells["worker_surname"].Value.ToString();
-                textBoxLastname.Text = dgvData5.Rows[e.RowIndex].Cells["worker_lastname"].Value.ToString();
-                textBoxJobposition.Text = dgvData5.Rows[e.RowIndex].Cells["jobposition"].Value.ToString();
-
-            }
-        }
+        
 
         private void button17_Click(object sender, EventArgs e)
         {
-            string worker_id = textBox1.Text;
-            string worker_name = textBoxName.Text;
-            string worker_surname = textBoxSurname.Text;
-            string worker_lastname = textBoxLastname.Text;
-            string worker_jobposition = textBoxJobposition.Text;
-
-
-            // Формирование SQL-запроса
-            string query = "INSERT INTO worker (worker_id,worker_name, worker_surname, worker_lastname, jobposition) " +
-                           $"VALUES ('{worker_id}','{worker_name}', '{worker_surname}', '{worker_lastname}', '{worker_jobposition}');";
-
-            // Выполнение SQL-запроса
-            NpgsqlCommand command = new(query, conn);
-            conn.Open();
-            int rowsAffected = command.ExecuteNonQuery();
-            conn.Close();
-
-            if (rowsAffected > 0)
-            {
-                MessageBox.Show("Данные успешно добавлены в базу данных.");
-            }
-            else
-            {
-                MessageBox.Show("Не удалось добавить данные в базу данных.");
-            }
+            Form2 newForm = new Form2();
+            newForm.Show();
         }
 
         private void button7_Click(object sender, EventArgs e)
