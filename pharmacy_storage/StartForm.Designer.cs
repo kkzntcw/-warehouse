@@ -35,7 +35,7 @@
             // 
             // startBtn
             // 
-            startBtn.Location = new Point(66, 72);
+            startBtn.Location = new Point(109, 63);
             startBtn.Name = "startBtn";
             startBtn.Size = new Size(200, 30);
             startBtn.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // infoBtn
             // 
-            infoBtn.Location = new Point(66, 108);
+            infoBtn.Location = new Point(103, 108);
             infoBtn.Name = "infoBtn";
             infoBtn.Size = new Size(100, 30);
             infoBtn.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // quitBtn
             // 
-            quitBtn.Location = new Point(166, 108);
+            quitBtn.Location = new Point(209, 108);
             quitBtn.Name = "quitBtn";
             quitBtn.Size = new Size(100, 30);
             quitBtn.TabIndex = 2;
@@ -67,12 +67,12 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(348, 194);
+            ClientSize = new Size(443, 194);
             Controls.Add(quitBtn);
             Controls.Add(infoBtn);
             Controls.Add(startBtn);
             Name = "StartForm";
-            Text = "Аптечный склад \"Еклиник\"";
+            Text = "ЕКЛИНИК-РАЗВИТИЕ";
             Load += StartForm_Load;
             ResumeLayout(false);
         }

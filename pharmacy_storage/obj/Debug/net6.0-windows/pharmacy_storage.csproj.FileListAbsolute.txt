@@ -21,3 +21,4 @@ C:\Users\kkznt\source\repos\pharmacy_storage\pharmacy_storage\obj\Debug\net6.0-w
 C:\Users\kkznt\source\repos\pharmacy_storage\pharmacy_storage\obj\Debug\net6.0-windows\pharmacy_storage.MainForm.resources
 C:\Users\kkznt\source\repos\pharmacy_storage\pharmacy_storage\obj\Debug\net6.0-windows\pharmacy_storage.StartForm.resources
 C:\Users\kkznt\source\repos\pharmacy_storage\pharmacy_storage\obj\Debug\net6.0-windows\pharmacy_storage.InfoForm.resources
+C:\Users\kkznt\source\repos\pharmacy_storage\pharmacy_storage\obj\Debug\net6.0-windows\pharmacy_storage.Form2.resources

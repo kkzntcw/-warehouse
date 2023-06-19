@@ -79,16 +79,6 @@
             tabPage3 = new TabPage();
             dgvData3 = new DataGridView();
             tabPage4 = new TabPage();
-            label27 = new Label();
-            textBox1 = new TextBox();
-            label26 = new Label();
-            label25 = new Label();
-            label24 = new Label();
-            label23 = new Label();
-            textBoxName = new TextBox();
-            textBoxJobposition = new TextBox();
-            textBoxLastname = new TextBox();
-            textBoxSurname = new TextBox();
             button19 = new Button();
             button18 = new Button();
             button17 = new Button();
@@ -105,6 +95,32 @@
             dgvData4 = new DataGridView();
             tabPage6 = new TabPage();
             dgvData6 = new DataGridView();
+            tabPage7 = new TabPage();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            selectbtn = new Button();
+            selectdgv = new DataGridView();
+            textBox2testsql = new TextBox();
+            tabPage8 = new TabPage();
+            tableLayoutPanel2 = new TableLayoutPanel();
+            button1 = new Button();
+            listView1 = new ListView();
+            client_id = new ColumnHeader();
+            company = new ColumnHeader();
+            street = new ColumnHeader();
+            tabPage9 = new TabPage();
+            label29 = new Label();
+            label28 = new Label();
+            comboBox1 = new ComboBox();
+            textBox2 = new TextBox();
+            dataGridView1 = new DataGridView();
+            tabPage10 = new TabPage();
+            label30 = new Label();
+            comboBox2 = new ComboBox();
+            textBox3 = new TextBox();
+            listView2 = new ListView();
+            seller_id = new ColumnHeader();
+            producer = new ColumnHeader();
+            price = new ColumnHeader();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvData).BeginInit();
@@ -122,6 +138,14 @@
             ((System.ComponentModel.ISupportInitialize)dgvData4).BeginInit();
             tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvData6).BeginInit();
+            tabPage7.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)selectdgv).BeginInit();
+            tabPage8.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
+            tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tabPage10.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -133,11 +157,16 @@
             tabControl1.Controls.Add(tabPage4);
             tabControl1.Controls.Add(tabPage5);
             tabControl1.Controls.Add(tabPage6);
-            tabControl1.Location = new Point(14, 16);
+            tabControl1.Controls.Add(tabPage7);
+            tabControl1.Controls.Add(tabPage8);
+            tabControl1.Controls.Add(tabPage9);
+            tabControl1.Controls.Add(tabPage10);
+            tabControl1.Dock = DockStyle.Top;
+            tabControl1.Location = new Point(0, 0);
             tabControl1.Margin = new Padding(3, 4, 3, 4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(949, 568);
+            tabControl1.Size = new Size(1001, 568);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -164,7 +193,7 @@
             tabPage1.Margin = new Padding(3, 4, 3, 4);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3, 4, 3, 4);
-            tabPage1.Size = new Size(941, 535);
+            tabPage1.Size = new Size(993, 535);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Клиенты ";
             tabPage1.UseVisualStyleBackColor = true;
@@ -368,9 +397,9 @@
             tabPage2.Margin = new Padding(3, 4, 3, 4);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3, 4, 3, 4);
-            tabPage2.Size = new Size(941, 535);
+            tabPage2.Size = new Size(993, 535);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "Товары";
+            tabPage2.Text = "Поставки";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // textBoxInvoiceId
@@ -600,7 +629,7 @@
             tabPage3.Location = new Point(4, 29);
             tabPage3.Margin = new Padding(3, 4, 3, 4);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(941, 535);
+            tabPage3.Size = new Size(993, 535);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Поставщики";
             tabPage3.UseVisualStyleBackColor = true;
@@ -618,16 +647,6 @@
             // 
             // tabPage4
             // 
-            tabPage4.Controls.Add(label27);
-            tabPage4.Controls.Add(textBox1);
-            tabPage4.Controls.Add(label26);
-            tabPage4.Controls.Add(label25);
-            tabPage4.Controls.Add(label24);
-            tabPage4.Controls.Add(label23);
-            tabPage4.Controls.Add(textBoxName);
-            tabPage4.Controls.Add(textBoxJobposition);
-            tabPage4.Controls.Add(textBoxLastname);
-            tabPage4.Controls.Add(textBoxSurname);
             tabPage4.Controls.Add(button19);
             tabPage4.Controls.Add(button18);
             tabPage4.Controls.Add(button17);
@@ -643,94 +662,14 @@
             tabPage4.Location = new Point(4, 29);
             tabPage4.Margin = new Padding(3, 4, 3, 4);
             tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(941, 535);
+            tabPage4.Size = new Size(993, 535);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Работники склада";
             tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Location = new Point(367, 359);
-            label27.Name = "label27";
-            label27.Size = new Size(102, 20);
-            label27.TabIndex = 22;
-            label27.Text = "ID работника";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(485, 356);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(290, 27);
-            textBox1.TabIndex = 21;
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Location = new Point(367, 491);
-            label26.Name = "label26";
-            label26.Size = new Size(90, 20);
-            label26.TabIndex = 20;
-            label26.Text = "Должность ";
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Location = new Point(367, 458);
-            label25.Name = "label25";
-            label25.Size = new Size(76, 20);
-            label25.TabIndex = 19;
-            label25.Text = "Отчество ";
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Location = new Point(367, 425);
-            label24.Name = "label24";
-            label24.Size = new Size(73, 20);
-            label24.TabIndex = 18;
-            label24.Text = "Фамилия";
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Location = new Point(370, 396);
-            label23.Name = "label23";
-            label23.Size = new Size(39, 20);
-            label23.TabIndex = 17;
-            label23.Text = "Имя";
-            // 
-            // textBoxName
-            // 
-            textBoxName.Location = new Point(485, 389);
-            textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(290, 27);
-            textBoxName.TabIndex = 16;
-            // 
-            // textBoxJobposition
-            // 
-            textBoxJobposition.Location = new Point(485, 491);
-            textBoxJobposition.Name = "textBoxJobposition";
-            textBoxJobposition.Size = new Size(290, 27);
-            textBoxJobposition.TabIndex = 15;
-            // 
-            // textBoxLastname
-            // 
-            textBoxLastname.Location = new Point(485, 458);
-            textBoxLastname.Name = "textBoxLastname";
-            textBoxLastname.Size = new Size(290, 27);
-            textBoxLastname.TabIndex = 14;
-            // 
-            // textBoxSurname
-            // 
-            textBoxSurname.Location = new Point(485, 422);
-            textBoxSurname.Name = "textBoxSurname";
-            textBoxSurname.Size = new Size(290, 27);
-            textBoxSurname.TabIndex = 13;
-            // 
             // button19
             // 
-            button19.Location = new Point(790, 461);
+            button19.Location = new Point(797, 476);
             button19.Margin = new Padding(3, 4, 3, 4);
             button19.Name = "button19";
             button19.Size = new Size(86, 31);
@@ -740,7 +679,7 @@
             // 
             // button18
             // 
-            button18.Location = new Point(790, 422);
+            button18.Location = new Point(705, 476);
             button18.Margin = new Padding(3, 4, 3, 4);
             button18.Name = "button18";
             button18.Size = new Size(86, 31);
@@ -751,7 +690,7 @@
             // 
             // button17
             // 
-            button17.Location = new Point(790, 383);
+            button17.Location = new Point(613, 476);
             button17.Margin = new Padding(3, 4, 3, 4);
             button17.Name = "button17";
             button17.Size = new Size(86, 31);
@@ -768,9 +707,9 @@
             dgvData5.Name = "dgvData5";
             dgvData5.RowHeadersWidth = 51;
             dgvData5.RowTemplate.Height = 25;
-            dgvData5.Size = new Size(611, 299);
+            dgvData5.Size = new Size(658, 444);
             dgvData5.TabIndex = 8;
-            dgvData5.CellContentClick += dgvData5_CellContentClick;
+           
             // 
             // label4
             // 
@@ -857,7 +796,7 @@
             tabPage5.Location = new Point(4, 29);
             tabPage5.Margin = new Padding(3, 4, 3, 4);
             tabPage5.Name = "tabPage5";
-            tabPage5.Size = new Size(941, 535);
+            tabPage5.Size = new Size(993, 535);
             tabPage5.TabIndex = 4;
             tabPage5.Text = "Счёт-фактуры";
             tabPage5.UseVisualStyleBackColor = true;
@@ -865,12 +804,12 @@
             // dgvData4
             // 
             dgvData4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvData4.Location = new Point(111, 111);
+            dgvData4.Location = new Point(8, 16);
             dgvData4.Margin = new Padding(3, 4, 3, 4);
             dgvData4.Name = "dgvData4";
             dgvData4.RowHeadersWidth = 51;
             dgvData4.RowTemplate.Height = 25;
-            dgvData4.Size = new Size(706, 309);
+            dgvData4.Size = new Size(977, 515);
             dgvData4.TabIndex = 6;
             // 
             // tabPage6
@@ -879,7 +818,7 @@
             tabPage6.Location = new Point(4, 29);
             tabPage6.Name = "tabPage6";
             tabPage6.Padding = new Padding(3);
-            tabPage6.Size = new Size(941, 535);
+            tabPage6.Size = new Size(993, 535);
             tabPage6.TabIndex = 5;
             tabPage6.Text = "Список товаров";
             tabPage6.UseVisualStyleBackColor = true;
@@ -894,11 +833,259 @@
             dgvData6.Size = new Size(889, 340);
             dgvData6.TabIndex = 0;
             // 
+            // tabPage7
+            // 
+            tabPage7.Controls.Add(tableLayoutPanel1);
+            tabPage7.Location = new Point(4, 29);
+            tabPage7.Name = "tabPage7";
+            tabPage7.Padding = new Padding(3);
+            tabPage7.Size = new Size(993, 535);
+            tabPage7.TabIndex = 6;
+            tabPage7.Text = "SELECT";
+            tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(selectbtn, 0, 1);
+            tableLayoutPanel1.Controls.Add(selectdgv, 0, 0);
+            tableLayoutPanel1.Controls.Add(textBox2testsql, 0, 2);
+            tableLayoutPanel1.Location = new Point(6, 3);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 3;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 70F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 15F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 15F));
+            tableLayoutPanel1.Size = new Size(922, 509);
+            tableLayoutPanel1.TabIndex = 0;
+            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
+            // 
+            // selectbtn
+            // 
+            selectbtn.Location = new Point(3, 359);
+            selectbtn.Name = "selectbtn";
+            selectbtn.Size = new Size(94, 29);
+            selectbtn.TabIndex = 0;
+            selectbtn.Text = "SELECT";
+            selectbtn.UseVisualStyleBackColor = true;
+            selectbtn.Click += selectbtn_Click;
+            // 
+            // selectdgv
+            // 
+            selectdgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            selectdgv.Location = new Point(3, 3);
+            selectdgv.Name = "selectdgv";
+            selectdgv.RowHeadersWidth = 51;
+            selectdgv.RowTemplate.Height = 29;
+            selectdgv.Size = new Size(916, 350);
+            selectdgv.TabIndex = 1;
+            selectdgv.CellContentClick += selectdgv_CellContentClick;
+            // 
+            // textBox2testsql
+            // 
+            textBox2testsql.Location = new Point(3, 435);
+            textBox2testsql.Name = "textBox2testsql";
+            textBox2testsql.Size = new Size(916, 27);
+            textBox2testsql.TabIndex = 2;
+            // 
+            // tabPage8
+            // 
+            tabPage8.Controls.Add(tableLayoutPanel2);
+            tabPage8.Location = new Point(4, 29);
+            tabPage8.Name = "tabPage8";
+            tabPage8.Padding = new Padding(3);
+            tabPage8.Size = new Size(993, 535);
+            tabPage8.TabIndex = 7;
+            tabPage8.Text = "ListView";
+            tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel2
+            // 
+            tableLayoutPanel2.ColumnCount = 1;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel2.Controls.Add(button1, 0, 1);
+            tableLayoutPanel2.Controls.Add(listView1, 0, 0);
+            tableLayoutPanel2.Dock = DockStyle.Fill;
+            tableLayoutPanel2.Location = new Point(3, 3);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 2;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 90F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanel2.Size = new Size(987, 529);
+            tableLayoutPanel2.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Dock = DockStyle.Bottom;
+            button1.Location = new Point(3, 497);
+            button1.Name = "button1";
+            button1.Size = new Size(981, 29);
+            button1.TabIndex = 0;
+            button1.Text = "SELECT";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // listView1
+            // 
+            listView1.BackColor = SystemColors.InactiveCaption;
+            listView1.BorderStyle = BorderStyle.FixedSingle;
+            listView1.Columns.AddRange(new ColumnHeader[] { client_id, company, street });
+            listView1.Location = new Point(3, 3);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(936, 470);
+            listView1.TabIndex = 1;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.Details;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
+            // 
+            // client_id
+            // 
+            client_id.Text = "client_id";
+            // 
+            // company
+            // 
+            company.Text = "company";
+            company.Width = 300;
+            // 
+            // street
+            // 
+            street.Text = "street";
+            // 
+            // tabPage9
+            // 
+            tabPage9.Controls.Add(label29);
+            tabPage9.Controls.Add(label28);
+            tabPage9.Controls.Add(comboBox1);
+            tabPage9.Controls.Add(textBox2);
+            tabPage9.Controls.Add(dataGridView1);
+            tabPage9.Location = new Point(4, 29);
+            tabPage9.Name = "tabPage9";
+            tabPage9.Padding = new Padding(3);
+            tabPage9.Size = new Size(993, 535);
+            tabPage9.TabIndex = 8;
+            tabPage9.Text = "DT Filter";
+            tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Location = new Point(522, 385);
+            label29.Name = "label29";
+            label29.Size = new Size(97, 20);
+            label29.TabIndex = 4;
+            label29.Text = "Номер дома";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(8, 385);
+            label28.Name = "label28";
+            label28.Size = new Size(152, 20);
+            label28.TabIndex = 3;
+            label28.Text = "Название компании";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "до 50", "от 50 до 70", "больше 110", "Всё" });
+            comboBox1.Location = new Point(625, 381);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(151, 28);
+            comboBox1.TabIndex = 2;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(166, 382);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(350, 27);
+            textBox2.TabIndex = 1;
+            textBox2.TextChanged += textBox2_TextChanged;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(8, 6);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(939, 355);
+            dataGridView1.TabIndex = 0;
+            // 
+            // tabPage10
+            // 
+            tabPage10.Controls.Add(label30);
+            tabPage10.Controls.Add(comboBox2);
+            tabPage10.Controls.Add(textBox3);
+            tabPage10.Controls.Add(listView2);
+            tabPage10.Location = new Point(4, 29);
+            tabPage10.Name = "tabPage10";
+            tabPage10.Padding = new Padding(3);
+            tabPage10.Size = new Size(993, 535);
+            tabPage10.TabIndex = 9;
+            tabPage10.Text = "LV Filter";
+            tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Location = new Point(17, 367);
+            label30.Name = "label30";
+            label30.Size = new Size(52, 20);
+            label30.TabIndex = 3;
+            label30.Text = "Поиск";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "до 1500", "от 1500 до 10000", "больше 10000", "Все" });
+            comboBox2.Location = new Point(206, 364);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(151, 28);
+            comboBox2.TabIndex = 2;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(75, 364);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(125, 27);
+            textBox3.TabIndex = 1;
+            textBox3.TextChanged += textBox3_TextChanged;
+            // 
+            // listView2
+            // 
+            listView2.Columns.AddRange(new ColumnHeader[] { seller_id, producer, price });
+            listView2.GridLines = true;
+            listView2.Location = new Point(6, 6);
+            listView2.Name = "listView2";
+            listView2.Size = new Size(938, 340);
+            listView2.TabIndex = 0;
+            listView2.UseCompatibleStateImageBehavior = false;
+            listView2.View = View.Details;
+            // 
+            // seller_id
+            // 
+            seller_id.Text = "goods_id";
+            seller_id.Width = 80;
+            // 
+            // producer
+            // 
+            producer.Text = "producer";
+            producer.Width = 250;
+            // 
+            // price
+            // 
+            price.Text = "price";
+            price.Width = 120;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(958, 600);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(1001, 574);
             Controls.Add(tabControl1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "MainForm";
@@ -924,6 +1111,17 @@
             ((System.ComponentModel.ISupportInitialize)dgvData4).EndInit();
             tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvData6).EndInit();
+            tabPage7.ResumeLayout(false);
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)selectdgv).EndInit();
+            tabPage8.ResumeLayout(false);
+            tableLayoutPanel2.ResumeLayout(false);
+            tabPage9.ResumeLayout(false);
+            tabPage9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            tabPage10.ResumeLayout(false);
+            tabPage10.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -996,15 +1194,31 @@
         private Label label12;
         private TabPage tabPage6;
         private DataGridView dgvData6;
-        private Label label26;
-        private Label label25;
-        private Label label24;
-        private Label label23;
-        private TextBox textBoxName;
-        private TextBox textBoxJobposition;
-        private TextBox textBoxLastname;
-        private TextBox textBoxSurname;
-        private Label label27;
-        private TextBox textBox1;
+        private TabPage tabPage7;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button selectbtn;
+        private DataGridView selectdgv;
+        private TextBox textBox2testsql;
+        private TabPage tabPage8;
+        private TableLayoutPanel tableLayoutPanel2;
+        private Button button1;
+        private ListView listView1;
+        private ColumnHeader client_id;
+        private ColumnHeader company;
+        private ColumnHeader street;
+        private TabPage tabPage9;
+        private Label label28;
+        private ComboBox comboBox1;
+        private TextBox textBox2;
+        private DataGridView dataGridView1;
+        private Label label29;
+        private TabPage tabPage10;
+        private Label label30;
+        private ComboBox comboBox2;
+        private TextBox textBox3;
+        private ListView listView2;
+        private ColumnHeader seller_id;
+        private ColumnHeader producer;
+        private ColumnHeader price;
     }
 }
